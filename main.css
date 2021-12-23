@@ -1,35 +1,64 @@
 
-body {
-  font-family: Roboto, sans-serif;
+
+
+
+body { margin-bottom: 50px 
+background-color: green;
+}
+a { font-family: "Open Sans", sans-serif }
+.container { 
+margin-top:0;
+margin-bottom:0;
+margin-left:300px;
+margin-right:auto; 
+max-width: 400px; 
+padding: 0 30px;
 }
 
-.container {
-  padding: 0 40px;
+
+.cont { 
+margin-right: 0px;
+padding-top: 20px;
 }
+
+
+
 
   /* Свойства ссылок */
 a {
   display: block;
+  color: black;
   text-decoration:none;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.2em;     
+
 }
+
+
 
   /* Что делать при наведении на ссылку */
 a:hover {
-  color:#FFD700;
+  color: blue;
+  transform: scale(1.5);
+  margin-top:0;
+
+max-width: 30px; 
+    width: 2em;  
 }
 
-  /* Этим свойством добавляем подчеркивание */
-a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  transform: translateY(1.5em);
-  border-bottom: 1px solid #dadada;
-  width: 300px;
-}
-
+.section.second {
+  margin-bottom: 40px; }
+.section .cont {
+  position: relative; }
+  .section .cont:after {
+    position: absolute;
+    content: url(separator.png);
+    left: 0px; }
+  .section .cont h1 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    position: relative; }
+    
+ 
 
 h1 {
   font-size: 2em;
@@ -52,5 +81,5 @@ h2 {
 
   /* Эффект наведения на картинку */
 .photo:hover {
-  border: 3px solid #FFD700;
+  border: 3px solid yellow;
 }
